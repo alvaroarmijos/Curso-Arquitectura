@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AppArquitectura" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Status bar color. -->
+<!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="btnOpenOffer" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#FFFFFF</item>
+        <item name="colorButtonNormal">#726fda</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:borderlessButtonStyle">@android:color/black</item>
+    </style>
+</resources>
