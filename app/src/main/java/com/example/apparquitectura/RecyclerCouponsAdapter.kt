@@ -40,9 +40,18 @@ class RecyclerCouponsAdapter(var coupons : ArrayList<Coupon>, var resource: Int)
 
         fun setDataCard(coupon: Coupon){
             this.coupon = coupon
-            Picasso.get().load(coupon.image_url).resize(520, 520).centerCrop().into(imgCoupon)
+//            if(coupon.image_url.isEmpty()){
+//                imgCoupon.setImageResource(R.drawable.header)
+//            }
+//            else {
+//                Picasso.get().load(coupon.image_url).resize(520, 520).centerCrop().into(imgCoupon)
+//            }
+            if (coupon.image_url.isNotEmpty()){
+                Picasso.get().load(coupon.image_url).resize(520, 520).centerCrop().into(imgCoupon)
+            }
+
             tvTitle.setText(coupon.title)
-            tvDescriptionShort.setText(coupon.descriptionShort)
+            tvDescriptionShort.setText(coupon.description)
             tvCategory.setText(coupon.category)
             tvDate.setText(coupon.endDate)
 

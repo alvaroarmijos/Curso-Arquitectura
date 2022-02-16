@@ -12,7 +12,7 @@ class Coupon(couponJson: JsonObject?) : Serializable {
     lateinit var id: String
     lateinit var image_url: String
     lateinit var title: String
-    lateinit var descriptionShort: String
+//    lateinit var descriptionShort: String
     lateinit var category: String
     lateinit var description:String
     lateinit var offer: String
@@ -25,7 +25,7 @@ class Coupon(couponJson: JsonObject?) : Serializable {
             id                  = couponJson!!.get(ID).asString
             image_url           = couponJson!!.get(IMAGE_URL).asString
             title               = couponJson!!.get(TITLE).asString
-            descriptionShort    = chunkWords(couponJson!!.get(DESCRIPTION_SHORT).asString, ' ', 5)
+//            descriptionShort    = chunkWords(couponJson!!.get(DESCRIPTION_SHORT).asString, ' ', 5)
             category            = chunkWords(couponJson!!.get(CATEGORY).asString, ',', 1)
             description         = couponJson!!.get(DESCRIPTION).asString
             offer               = couponJson!!.get(OFFER).asString

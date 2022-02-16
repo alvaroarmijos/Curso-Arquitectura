@@ -81,14 +81,18 @@
         android:id="@+id/guideline9"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.21"/>
+
     <ImageView
+        android:id="@+id/imgHeaderDetail"
         android:layout_width="386dp"
-        android:layout_height="145dp" tools:srcCompat="@tools:sample/backgrounds/scenic[1]"
-        android:id="@+id/imgHeaderDetail" app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline4" app:layout_constraintHorizontal_bias="0.384"
-        android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="@+id/guideline9"
-        android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"/>
+        android:layout_height="145dp"
+        android:layout_marginStart="424dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[1]" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="375dp"
@@ -255,12 +259,13 @@
         android:text="Obtén esta Oferta"
         android:layout_width="389dp"
         android:layout_height="52dp"
+
         app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/btnOpenOffer" android:layout_marginTop="36dp"
         app:layout_constraintTop_toBottomOf="@+id/cardView" app:layout_constraintHorizontal_bias="0.498"
         android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        android:theme="@style/btnOpenOffer"
+
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
