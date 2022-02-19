@@ -1,4 +1,4 @@
-package com.example.apparquitectura
+package com.example.apparquitectura.model
 
 import com.google.gson.JsonObject
 import java.io.Serializable
