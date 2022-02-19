@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiAdapter {
 
-    val apiKey = ""
+    val apiKey = "e81acb2ee76139b5b00226cf5e2fc225"
     val urlApi = "http://feed.linkmydeals.com/"
 
     fun getClientService(): ApiService {
